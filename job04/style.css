@@ -1,0 +1,44 @@
+#navbar {
+    display: flex;
+}
+
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+}
+
+
+#navbar li {
+    margin: 10px;
+}
+
+.menu-icon {
+    display: none;
+}
+.checkbox{
+    visibility: hidden;
+}
+@media (max-width: 767px) {
+    #navbar {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuToggle:checked ~ #navbar {
+        display: flex;
+    }
+}
